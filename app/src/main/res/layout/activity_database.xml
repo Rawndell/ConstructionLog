@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.matej.constructionlog.DatabaseActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Prezime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Unesite prezime"
+        android:textColorHint="@color/hintTextColor"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Tip_projekta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText_Prezime"
+        android:layout_alignEnd="@+id/editText_Prezime"
+        android:hint="Unesite tip projekta"
+        android:textColorHint="@color/hintTextColor"
+        android:layout_below="@+id/editText_Prezime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Cijena_materijala"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Unesite cijenu materijala u kunama"
+        android:textColorHint="@color/hintTextColor"
+        android:layout_below="@+id/editText_Tip_projekta" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Cijena_posla"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText_Cijena_materijala"
+        android:layout_alignEnd="@+id/editText_Cijena_materijala"
+        android:hint="Unesite cijenu posla u kunama"
+        android:textColorHint="@color/hintTextColor"
+        android:layout_below="@+id/editText_Cijena_materijala" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_ID"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="ID projekta"
+        android:textColorHint="@color/hintTextColor"
+        android:layout_below="@+id/editText_Cijena_posla" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="5dp"
+        android:text="DODAJ PROJEKT"
+        android:id="@+id/btnAdd"
+        android:layout_below="@+id/editText_ID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="5dp"
+        android:text="PRIKAŽI SVE PROJEKTE"
+        android:id="@+id/btnView"
+        android:layout_below="@+id/btnDelete"
+        android:layout_alignRight="@+id/btnDelete"
+        android:layout_alignEnd="@+id/btnDelete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="5dp"
+        android:text="AŽURIRAJ PROJEKT"
+        android:id="@+id/btnUpdate"
+        android:layout_below="@+id/btnAdd"
+        android:layout_alignRight="@+id/btnAdd"
+        android:layout_alignEnd="@+id/btnAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="5dp"
+        android:text="OBRIŠI PROJEKT"
+        android:id="@+id/btnDelete"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_alignRight="@+id/btnUpdate"
+        android:layout_alignEnd="@+id/btnUpdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
