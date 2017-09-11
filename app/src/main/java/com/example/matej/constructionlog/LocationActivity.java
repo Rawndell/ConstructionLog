@@ -159,12 +159,9 @@ public class LocationActivity extends FragmentActivity implements OnMapReadyCall
         switch (requestCode) {
             case REQUEST_CODE:
 
-                // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
                     mapFragment.getMapAsync(this);
                 } else {
                     Toast.makeText(this, "Usluge mape je moguće koristiti kada dopustite usluge lokacije.", Toast.LENGTH_LONG).show();
